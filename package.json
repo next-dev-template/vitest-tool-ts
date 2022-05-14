@@ -1,0 +1,46 @@
+{
+  "name": "vitest-tool-ts",
+  "version": "0.0.1",
+  "main": "./lib/index.cjs",
+  "module": "./lib/index.mjs",
+  "keywords": [
+    "typescript"
+  ],
+  "description": "vitest-tool-ts is a dev template",
+  "exports": {
+    ".": {
+      "import": "./lib/index.mjs",
+      "require": "./lib/index.cjs"
+    }
+  },
+  "types": "./lib/index.d.ts",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/next-dev-template/vitest-tool-ts"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "dev": "vitest",
+    "build": "unbuild",
+    "test": "vitest",
+    "prepare": "husky install",
+    "lint": "eslint src --ext .ts,.js --fix",
+    "release": "standard-version"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.4",
+    "@commitlint/config-conventional": "^16.2.4",
+    "eslint": "^8.15.0",
+    "eslint-config-jammy": "^0.0.9",
+    "husky": "^8.0.1",
+    "lint-staged": "^12.4.1",
+    "standard-version": "^9.3.2",
+    "typescript": "^4.5.4",
+    "unbuild": "^0.7.4",
+    "vite": "^2.9.7",
+    "vitest": "^0.12.6"
+  }
+}
